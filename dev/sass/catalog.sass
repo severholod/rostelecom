@@ -1,0 +1,149 @@
+.catalog
+	background: #f7f7f7
+	padding: 37px 0 61px
+	&-row > div
+		margin-bottom: 28px
+	&-nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 30px
+	&-sort
+		padding: 5px 8px
+		background: #FFF
+		border: 1px solid #DDDDDD
+		border-radius: 3px
+		span
+			font-size: 14px
+			color: #7B929B
+		select
+			border: none
+			font-size: 14px
+	&-view
+		display: flex
+		background: #FFF
+		border: 1px solid #DDDDDD
+		border-radius: 2px
+		padding: 4px 8px
+		width: 70px
+		a
+			width: 50%
+		&-grid
+			display: flex
+			flex-wrap: wrap
+			span
+				display: block
+				width: 7px
+				height: 7px
+				margin: 2px
+				background: #CDCDCD
+		&-list
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			height: 100%
+			padding: 2px 0
+			span
+				display: block
+				width: 19px
+				height: 4px
+				background: #CDCDCD
+		&-active
+			span
+				background: #FF4F12
+	&-item
+		background: #FFF
+		border: 1px solid #DDDDDD
+		height: 100%
+		&__photo
+			img
+				width: 100%
+		&__text
+			padding: 15px
+		&__title
+			font-weight: bold
+			font-size: 17px
+			color: #333333
+			margin-bottom: 13px
+		&__address
+			font-size: 15.5px
+			line-height: 16px
+			color: #7B929B
+			p
+				margin-bottom: 15px
+			span
+				color: #333
+		&__price
+			font-weight: bold
+			font-size: 17px
+			color: #FF4F12
+		&__date
+			font-weight: normal
+			font-size: 14px
+			color: #333
+		&:hover
+			box-shadow: 0 0 7px #333
+	&-button
+		line-height: 41px
+		.btn
+			padding-left: 40px
+			padding-right: 40px
+	&-pagination
+		background: #FFF
+		border: 1px solid #E9E9E9
+		border-radius: 3px
+		display: flex
+		align-items: center
+		&__item
+			padding: 0 15px
+			.pg-prev
+				display: block
+				width: 5px
+				height: 10px
+				background: url('../img/icons/pg-prev.png') center no-repeat
+				&:hover
+					background: url('../img/icons/pg-hover.png') center no-repeat
+					transform: rotate(180deg)
+			.pg-next
+				display: block
+				width: 5px
+				height: 10px
+				background: url('../img/icons/pg-next.png') center no-repeat
+				&:hover
+					background: url('../img/icons/pg-hover.png') center no-repeat
+			a
+				font-weight: normal
+				font-size: 16px
+				color: #333
+				&:hover
+					color: #FF4F12
+			&-active
+				position: relative
+				a
+					color: #FF4F12
+				&::after
+					content: ''
+					display: block
+					width: 100%
+					height: 4px
+					background: #FF4F12
+					position: absolute
+					left: 0
+					bottom: -7px
+	&-item-list
+		display: flex
+		flex-wrap: wrap
+		.catalog-item
+			&__photo
+				flex-shrink: 0
+			&__text
+				padding: 25px
+				flex-basis: 0
+				flex-grow: 1
+			&__title
+				max-width: 530px
+				margin-bottom: 25px
+			&__address
+				padding-bottom: 10px
+

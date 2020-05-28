@@ -1,0 +1,68 @@
+.form
+	&-item
+		margin-bottom: 32px
+.label
+	display: block
+	font-weight: normal
+	font-size: 16px
+	color: #333333
+	margin-bottom: 11px
+	sup
+		color: red
+		font-size: 18px
+.input
+	width: 100%
+	background: #FFF
+	border: 1px solid #E1E1E1
+	border-radius: 3px
+	font-weight: normal
+	font-size: 15.5px
+	line-height: 20px
+	color: #7B929B
+	padding: 15px 18px
+	&:focus
+		border: 1px solid #7B929B
+textarea.input
+	resize: none
+	min-height: 120px
+.searchform
+	&-item
+		border-left: 1px solid #BABDBA
+		border-bottom: 1px solid #BABDBA
+		height: 100%
+		padding: 14px 19px
+		input, select
+			color: #333333
+			font-weight: normal
+			font-size: 17px
+			border: none
+			background: transparent
+		select
+			width: 100%
+		input
+			width: 50%
+		&-long
+			padding: 0 !important
+			display: flex
+			border-bottom: none
+			button
+				display: inline-block
+				height: 100%
+				width: 62px
+				background-color: #FF4F12
+				background-image: url('../img/icons/search.png')
+				background-position: center
+				background-repeat: no-repeat
+				border: none
+				&:hover
+					background-color: #FF8218
+				span
+					display: none
+			input
+				width: calc(100% - 62px)
+				padding: 14px 19px
+.searchform-item.d-flex
+	input:first-child
+		border-right: 1px solid #BABDBA
+	input:last-child
+		padding-left: 15px

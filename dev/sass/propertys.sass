@@ -1,0 +1,50 @@
+.propertys
+	padding: 46px 0
+	&-item
+		border-radius: 3px
+		padding: 25px
+		height: 100%
+		position: relative
+		z-index: 1
+		background-size: cover
+		&__title
+			font-weight: bold
+			font-size: 26px
+			letter-spacing: 0.01em
+			color: #FFF
+			margin-bottom: 14px
+			max-width: 240px
+		&__list
+			padding: 0
+			margin: 0
+		&__link
+			list-style-type: none
+			padding-top: 4px
+			padding-bottom: 4px
+			a
+				font-weight: normal
+				font-size: 16px
+				color: #FFF
+				&:hover
+					color: #7B929B
+				span
+					color: #7B929B
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			border-top: 302px solid #404653
+			border-right: 87px solid transparent
+			border-left: 200px solid #404653
+			transition: border-left .3s ease
+			z-index: -1
+		&-longbg::after
+			border-left: 240px solid #404653
+@media(min-width: 1250px)
+	.propertys
+		&-item:hover::after
+			border-left: 292px solid #404653
+			transition: border-left .3s ease
+

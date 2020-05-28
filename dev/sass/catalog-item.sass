@@ -1,0 +1,114 @@
+.catalog
+	&-item-section
+		padding-top: 47px
+		padding-bottom: 60px
+		border-bottom: 1px solid #E1E1E1
+		background: #f7f7f7
+.card
+	padding-top: 25px
+	&-title
+		font-weight: 500
+		font-size: 26px
+		color: #333333
+		margin-bottom: 32px
+	&-photos
+		&__big
+			margin-bottom: 14px
+			img
+				display: none
+			img.card-photos__big-active
+				display: block
+		&__small
+			display: flex
+			margin-right: -7px
+			margin-left: -7px
+			&-item
+				max-width: 25%
+				flex: 0 0 25%
+				padding: 0 7px
+				cursor: pointer
+				img
+					width: 100%
+					border: 1px solid #f7f7f7
+					&:hover
+						border: 1px solid #ff4f12
+	&-price
+		margin-right: 15px
+		font-weight: bold
+		font-size: 26px
+		color: #FF4F12
+		&-wrap
+			display: flex
+			align-items: center
+			margin-bottom: 25px
+	&-fixprice
+		font-size: 13px
+		color: #FFFFFF
+		padding: 3px 14px
+		background: #7B929B
+		border-radius: 5px
+	&-person
+		background: #FFF
+		border: 1px solid #E1E1E1
+		display: flex
+		padding: 17px 25px
+		margin-bottom: 29px
+		&__photo
+			flex-shrink: 0
+			padding-right: 25px
+			border-right: 1px solid #E1E1E1
+		&__text
+			padding-left: 25px
+		&__name
+			font-weight: bold
+			font-size: 17px
+			color: #FF4F12
+			margin-bottom: 10px
+		&__position
+			font-size: 16px
+			color: #333
+			margin-bottom: 10px
+		&__phone
+			margin-bottom: 5px
+			a
+				font-weight: bold
+				font-size: 17px
+				color: #333
+				&:hover
+					text-decoration: underline
+		&__mail
+			a
+				font-size: 14px
+				color: #7B929B
+				&:hover
+					text-decoration: underline
+	&-button
+		line-height: 41px
+		margin-bottom: 47px
+		.btn
+			padding-left: 50px
+			padding-right: 50px
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-links
+		display: flex
+		align-items: center
+	&-link
+		padding-left: 40px
+		a
+			color: #333
+			font-size: 14px
+			&:hover 
+				svg
+					fill: #FF4F12
+				span
+					text-decoration: underline
+		svg
+			fill: #7B929B
+.map
+	img
+		width: 100%		
+.offers
+	border-bottom: none

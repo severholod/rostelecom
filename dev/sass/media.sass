@@ -1,0 +1,270 @@
+@media(max-width: 1199px)
+	.propertys
+		&-item
+			&::after
+				border-right: 48px solid transparent
+	.call
+		&-right
+			&__bottom a
+				font-size: 22px
+@media(min-width: 992px) and (max-width: 1199px)
+	.team
+		&-item
+			&__descr
+				font-size: 18px
+@media(min-width: 1200px) and (max-width: 1249px)
+	.team
+		&-item
+			&__descr
+				font-size: 16px
+@media(max-width: 991px)
+	.header
+		&-nav
+			&__item
+				margin-right: 35px
+	.main
+		&-title
+			font-size: 46px
+	.searchform
+		&-item
+			padding: 14px
+	.propertys
+		padding: 46px 0 26px
+		&-item
+			height: auto
+			min-height: 302px
+			margin-bottom: 20px
+	.auction
+		&-text
+			max-width: 400px
+	.footer
+		&-button
+			line-height: inherit
+			.btn
+				padding-left: 5px
+				padding-right: 5px
+				width: 100%
+				display: block
+	.catalog
+		&-banner
+			background-position: 0
+		&-item-list
+			.catalog-item
+				&__photo
+					width: 100%
+	.call
+		&-right
+			margin-top: 40px
+			max-width: 208px
+@media(max-width: 767px)
+	.top
+		display: none
+	.header
+		top: 0
+		.container
+			max-width: 100%
+	.main
+		&-title
+			font-size: 35px
+	.custom-container
+		padding-left: 35px
+		padding-right: 35px
+	.bottom
+		padding: 16px 0 5px
+		&-item
+			margin-bottom: 10px
+			text-align: center
+@media(max-width: 575px)
+	.main
+		padding-top: 43px
+		padding-bottom: 54px
+		&-title
+			font-size: 28px
+	.searchform
+		&-item
+			border-left: none
+			&-long
+				flex-wrap: wrap
+				input
+					width: 100%
+				button
+					width: 100%
+					height: 50px
+					background-image: none
+					span
+						display: inline
+						font-weight: normal
+						font-size: 18px
+						color: #FFF
+	.propertys
+		&-item
+			background-color: #404653
+			background-image: none !important
+			min-height: auto
+			padding: 20px 20px 10px
+			&::after
+				display: none
+			&__title
+				max-width: none
+				&::after
+					width: 16px
+					height: 10px
+					background: url('../img/icons/arrow-orange.png') center no-repeat
+					transform: translateY(-5px) rotate(180deg)
+					transition: all .3s ease
+			&__list
+				margin-left: -20px
+				margin-right: -20px
+				padding: 15px 20px 0
+				border-top: 1px solid rgba(123, 146, 155, 0.3)
+		.propertys-item__title.open::after
+			transform: translateY(-5px) rotate(0deg)
+	.auction
+		padding: 35px 0
+		&-title
+			max-width: 400px
+			font-size: 34px
+			margin-bottom: 28px
+		&-text
+			max-width: 215px
+			font-size: 16px
+			margin-bottom: 62px
+	.team
+		padding: 40px 0
+		&-head
+			margin-bottom: 21px
+		&-slider
+			&__nav
+				button
+					width: 10px
+					height: 18px
+				#team-next
+					margin-left: 20px
+	.footer
+		padding: 0 0 26px
+		&-title
+			border-bottom: 1px solid rgba(123, 146, 155, 0.3)
+			margin-bottom: 0
+			padding: 11px 15px
+		ul.footer-menu
+			margin-left: -15px
+			margin-right: -15px
+		&-contacts
+			.footer-title
+				border-bottom: none
+				padding: 11px 0
+		&-button
+			.btn
+				max-width: 280px
+		.index-toggler::after
+			width: 10px
+			height: 6px
+			background: url('../img/icons/arrow-gray.png') center no-repeat
+			transform: translateY(-3px) rotate(0deg)
+			transition: all .3s ease
+		.index-toggler.open::after
+			transform: translateY(-3px) rotate(180deg)
+	.index
+		&-toggle
+			display: none
+		&-toggler
+			position: relative
+			display: block
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				right: 0
+	.tab
+		min-width: 33.33333%
+	.popup
+		&-head
+			padding: 20px 15px
+		&-body
+			padding: 20px 15px
+	#message
+		.popup-politic
+			margin-bottom: 15px
+	.breadcrumbs
+		margin-bottom: 22px
+	.catalog
+		padding: 27px 0 47px
+		&-banner
+			padding: 14px 0 30px
+			&-title
+				font-size: 26px
+				margin-bottom: 25px
+				text-align: center
+		&-view
+			display: none
+		&-sort
+			span
+				display: none
+		&-pagination
+			display: none
+		&-button
+			line-height: inherit
+			width: 100%	
+			.btn
+				display: block
+				text-align: center
+		&-item-list
+			.catalog-item
+				&__text
+					padding: 15px
+	.call
+		background-position: 55%
+		padding: 52px 0 48px
+		&-overtitle
+			margin-bottom: 15px
+		&-title
+			font-size: 30px
+			margin-bottom: 30px
+		&-form
+			.d-flex
+				flex-wrap: wrap
+			input
+				margin-bottom: 20px
+				margin-right: 0
+				max-width: 100%
+			button.btn
+				width: 100%
+				padding-top: 15px
+				padding-bottom: 15px
+			&__small
+				max-width: 188px
+				font-size: 12px
+				margin-top: 15px
+@media(max-width: 450px)
+	.propertys
+		&-item
+			&__title
+				font-size: 21px
+				padding-right: 20px
+	.auction
+		&-title
+			max-width: 280px
+			font-size: 22px
+	.team
+		&-title
+			font-size: 27px
+@media(max-width: 375px)
+	.call
+		background: url('../img/call-bg-mobile.jpg') right no-repeat	
+		background-size: cover
+		&-title
+			font-size: 24px
+@media(max-width: 374px)
+	.main
+		&-title
+			font-size: 26px
+	.custom-container
+		padding-left: 20px
+		padding-right: 20px
+	.team
+		&-title
+			font-size: 22px
+	.popup
+		&-head
+			font-size: 25px

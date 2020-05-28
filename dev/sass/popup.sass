@@ -1,0 +1,59 @@
+.popup
+	display: none
+	&-head
+		background: #FF4F12
+		text-align: center
+		padding: 23px
+		font-weight: 500
+		font-size: 30px
+		color: #FFF
+		border-radius: 3px 3px 0 0
+	&-body
+		padding: 30px
+		background: #F7F7F7
+		border-radius: 0 0 3px 3px
+	&-button
+		.btn
+			width: 100%
+	&-politic
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		color: #333333
+		a
+			text-decoration: underline
+			color: #333333
+	&-text
+		font-weight: normal
+		font-size: 21px
+		color: #333333
+		margin-bottom: 20px
+	&-lighttext
+		font-weight: normal
+		font-size: 16px
+		color: #7B929B
+		margin-bottom: 28px
+.fancybox-close
+	width: 18px
+	height: 18px
+	top: 19px
+	right: 17px
+	background: none
+	&::before
+		content: ''
+		display: block
+		width: 20px
+		height: 2px
+		background: #fff
+		position: absolute
+		top: calc(50% - 1px)
+		transform: rotate(45deg)
+	&::after
+		content: ''
+		display: block
+		width: 20px
+		height: 2px
+		background: #fff
+		position: absolute
+		top: calc(50% - 1px)
+		transform: rotate(-45deg)

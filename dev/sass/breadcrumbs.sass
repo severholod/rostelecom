@@ -1,0 +1,27 @@
+.breadcrumbs
+	margin: 0 0 40px
+	padding: 0
+	&-item
+		display: inline-block
+		a:hover
+			text-decoration: underline
+		&::after
+			display: inline-block
+			content: ''
+			width: 5px
+			height: 10px
+			margin: 0 10px
+		&:last-child::after
+			display: none
+	&-white
+		color: #fff
+		a
+			color: #fff
+		.breadcrumbs-item::after
+			background: url('../img/icons/breadcrumbs-white.png') center no-repeat
+	&-gray
+		color: #7B929B
+		a
+			color: #7B929B
+		.breadcrumbs-item::after
+			background: url('../img/icons/breadcrumbs-gray.png') center no-repeat

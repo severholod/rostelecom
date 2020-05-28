@@ -1,0 +1,86 @@
+.overlay
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	opacity: 0
+	visibility: hidden
+	z-index: 90
+	background: rgba(0,0,0,.5)
+	&-active
+		opacity: 1
+		visibility: visible
+.mobile-toggler
+	width: 22px
+	height: 15px
+	cursor: pointer
+	position: relative
+	z-index: 95
+	span
+		display: block
+		width: 100%
+		height: 2px
+		background: #313948
+		border-radius: 1px
+		position: absolute
+		left: 0
+		transition: all .3s linear
+	&__line
+		&-first
+			top: 0
+		&-second
+			top: 50%
+			transform: translateY(-50%)
+		&-third
+			top: 50%
+			transform: translateY(-50%)
+		&-fourth
+			bottom: 0
+.mobile-close
+	.mobile-toggler__line-first, .mobile-toggler__line-fourth
+		opacity: 0
+	.mobile-toggler__line-second
+		transform: translateY(-50%) rotate(45deg)
+	.mobile-toggler__line-third
+		transform: translateY(-50%) rotate(-45deg)
+.mobile-menu
+	position: fixed
+	top: 71px
+	z-index: 100
+	background: #fff
+	padding-bottom: 23px
+	width: 320px
+	transform: translateX(-350px)
+	transition: transform .5s ease
+	overflow: scroll
+	height: calc(100% - 71px)
+	.header-city__wrap
+		padding: 13px 15px
+		background: #313948
+	.header-phone
+		text-align: center
+		margin-bottom: 16px
+	.header-button
+		margin-left: 0
+		padding-left: 15px
+		padding-right: 15px
+		line-height: inherit
+		.btn
+			width: 100%
+			display: block
+	&-nav
+		margin-bottom: 70px
+		&__list
+			margin: 0
+			padding: 0
+		&__item
+			font-size: 17px
+			padding: 17px 15px
+			border-bottom: 1px solid #E1E1E1
+			a
+				color: #333333
+	&-active
+		transform: translateX(0px)
+		transition: transform .5s ease
+

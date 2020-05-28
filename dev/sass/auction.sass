@@ -1,0 +1,42 @@
+.auction
+	padding: 75px 0
+	background: url('../img/auction-bg.jpg') center no-repeat
+	&-title
+		font-weight: 500
+		font-size: 38px
+		color: #FFF
+		background: #FF4F12
+		padding: 4px 10px
+		border-radius: 0px 5px 0px 0px
+		max-width: 462px
+		margin-bottom: 45px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 34px
+			height: 4.55px
+			background: url('../img/icons/auc-title-decor1.png') right no-repeat
+			position: absolute
+			bottom: -4.55px
+			right: 0
+		&::after
+			content: ''
+			display: block
+			width: 34px
+			height: 20px
+			background: url('../img/icons/auc-title-decor2.png') right no-repeat
+			position: absolute
+			bottom: -20px
+			right: 0
+	&-text
+		max-width: 540px
+		font-weight: 600
+		font-size: 20px
+		color: #333333
+		margin-bottom: 43px
+	&-button
+		line-height: 41px
+		.btn
+			padding-left: 48px
+			padding-right: 48px
