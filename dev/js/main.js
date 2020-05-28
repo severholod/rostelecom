@@ -97,6 +97,10 @@ $(document).ready(function(){
 				$(this).next('.index-toggle').toggle(400);
 			}
 	});
+	$('.toggler').on('click', function(e) {
+			$(this).toggleClass('open');
+			$(this).next('.toggle').toggle(400);
+	});
 	/*------------------------------------------------*/
 		/*--------------------Табы-----------------------*/
 		$('.tab').on('click', function() {

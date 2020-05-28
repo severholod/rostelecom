@@ -7,6 +7,26 @@
 		&-right
 			&__bottom a
 				font-size: 22px
+	.card
+		&-person
+			padding: 17px
+			&__photo
+				padding-right: 15px
+			&__text
+				padding-left: 15px
+	.call
+		&-min
+			.call
+				&-title
+					font-size: 32px
+				&-right__phone a
+					font-size: 24px
+	.offers
+		.container
+			overflow: scroll
+		.row
+			flex-wrap: nowrap
+			width: 1230px
 @media(min-width: 992px) and (max-width: 1199px)
 	.team
 		&-item
@@ -56,6 +76,18 @@
 		&-right
 			margin-top: 40px
 			max-width: 208px
+		&-min
+			.call
+				&-title
+					margin-bottom: 25px
+	.card
+		&-title
+			margin-bottom: 15px
+		&-photos
+			margin-bottom: 25px
+	.description
+		&-tables
+			margin-bottom: 30px
 @media(max-width: 767px)
 	.top
 		display: none
@@ -74,6 +106,11 @@
 		&-item
 			margin-bottom: 10px
 			text-align: center
+	.call
+		&-min
+			.call
+				&-form
+					margin-bottom: 40px
 @media(max-width: 575px)
 	.main
 		padding-top: 43px
@@ -236,6 +273,80 @@
 				max-width: 188px
 				font-size: 12px
 				margin-top: 15px
+		&-min
+			.call
+				&-form
+					input
+						max-width: 100%
+	.catalog-item-section
+		padding-top: 30px
+		padding-bottom: 30px
+	.card
+		padding-top: 20px
+		&-title
+			font-size: 21px
+		&-price
+			font-size: 21px
+		&-person
+			padding: 14px 10px
+			margin-bottom: 19px
+			&__photo
+				padding-right: 10px
+				img
+					max-width: 80px
+			&__text
+				padding-left: 10px
+		&-button
+			margin-bottom: 30px
+			line-height: inherit
+			.btn
+				display: block
+		&-photos
+			margin-left: -15px
+			margin-right: -15px
+			overflow: hidden
+		&-link
+			padding-left: 15px
+	.description
+		&-info
+			padding: 23px 17px 0
+			&__item
+				&-icon
+					margin-right: 15px
+				&-title
+					a
+						font-size: 14px
+					span
+						font-size: 14px
+		&-text
+			font-size: 14px
+			margin-bottom: 15px
+		&-table
+			&__col
+				font-size: 15px
+	.map
+		overflow: hidden
+		.card-title
+			padding: 0 15px
+		.container
+			padding: 0
+		img
+			transform: scale(1.1)
+	.offers 
+		.row
+			width: 1110px
+	.faq
+		padding-top: 13px
+		padding-bottom: 15px
+		&-item
+			&__question
+				padding: 11px 35px 11px 15px
+				font-size: 16px
+				&::after
+					right: 10px
+			&__answer
+				padding: 12px 16px
+				font-size: 14px
 @media(max-width: 450px)
 	.propertys
 		&-item
@@ -268,3 +379,15 @@
 	.popup
 		&-head
 			font-size: 25px
+	.card
+		&-person
+			&__name
+				font-size: 15px
+			&__position
+				font-size: 13px
+			&__phone
+				a
+					font-size: 14px
+			&__photo
+				img
+					max-width: 58px

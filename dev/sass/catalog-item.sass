@@ -16,6 +16,7 @@
 			margin-bottom: 14px
 			img
 				display: none
+				width: 100%
 			img.card-photos__big-active
 				display: block
 		&__small
@@ -107,6 +108,62 @@
 					text-decoration: underline
 		svg
 			fill: #7B929B
+.description
+	&-text
+		font-weight: normal
+		font-size: 16px
+		color: #333333
+		margin-bottom: 20px
+	&-tables
+	&-table
+		&__row
+			display: flex
+			justify-content: space-between
+			position: relative
+			z-index: 1
+			&::after
+				content: ''
+				display: block
+				width: 100%
+				border-bottom: 2px dotted #E1E1E1
+				position: absolute
+				bottom: 10px
+				z-index: -1
+		&__col
+			font-weight: normal
+			font-size: 16px
+			color: #333333
+			padding: 3px 0
+			background: #f7f7f7
+	&-info
+		background: #FFF
+		border: 1px solid #E1E1E1
+		padding: 36px 25px 0 35px
+		height: 100%
+		&__title
+			font-weight: 500
+			font-size: 19px
+			color: #333333
+			margin-bottom: 30px
+		&__item
+			display: flex
+			align-items: center
+			margin-bottom: 30px
+			&-title
+				a
+					font-weight: normal
+					font-size: 16px
+					color: #333333
+					&:hover
+						text-decoration: underline
+				span
+					font-weight: normal
+					font-size: 16px
+					color: #7B929B
+			&-icon
+				margin-right: 20px
+				svg
+					fill: #FF4F12
 .map
 	img
 		width: 100%		

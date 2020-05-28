@@ -1,0 +1,45 @@
+.faq
+	background: #f7f7f7
+	padding-top: 25px
+	padding-bottom: 45px
+	&-title
+		font-weight: 500
+		font-size: 38px
+		color: #333
+		margin-bottom: 33px
+	&-item
+		background: #fff
+		margin-bottom: 20px
+		border: 1px solid #E1E1E1
+		&__question
+			padding: 20px 60px 20px 30px
+			position: relative
+			font-size: 19px
+			font-weight: 600
+			color: #333
+			cursor: pointer
+			transition: color 1s ease
+			&::after
+				content: ''
+				display: block
+				width: 12px
+				height: 8px
+				background: url('../img/icons/arrow-gray.png') center no-repeat
+				position: absolute
+				right: 30px
+				top: calc(50% - 4px)
+				transform: rotate(0deg)
+				transition: all .3s ease
+		&__question.open
+			color: #FF4F12
+			transition: color 1s ease
+			&::after
+				transform: rotate(180deg)
+		&__answer
+			font-weight: normal
+			font-size: 16px
+			color: #333
+			padding: 17px 30px
+			border-top: 1px solid #E1E1E1
+			display: none
+			text-align: justify
