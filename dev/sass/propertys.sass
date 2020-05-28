@@ -35,13 +35,24 @@
 			position: absolute
 			top: 0
 			left: 0
-			border-top: 302px solid #404653
+			border-top: 337px solid #404653
 			border-right: 87px solid transparent
-			border-left: 200px solid #404653
+			border-left: 230px solid #404653
 			transition: border-left .3s ease
 			z-index: -1
 		&-longbg::after
 			border-left: 240px solid #404653
+	&-tabs
+		display: flex
+		margin-bottom: 10px
+	&-tab
+		font-size: 14px
+		padding: 2px 6px
+		min-width: 85px
+		&:first-child
+			border-radius: 3px 0 0 3px
+		&:last-child
+			border-radius: 0 3px 3px 0
 @media(min-width: 1250px)
 	.propertys
 		&-item:hover::after

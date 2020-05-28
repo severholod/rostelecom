@@ -5,7 +5,7 @@
 	<title>Найти недвижимость в Москве</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/img/icons/favicon.ico" />
 	
 	<!-- Google Fonts -->
 	<link href="//db.onlinewebfonts.com/c/fed608324e7871569214facf74de326a?family=Rostelecom+Basis+Medium" rel="stylesheet" type="text/css"/>
@@ -81,7 +81,7 @@
 		<div class="searchform">
 			<form action="">
 				<input type="hidden" value="Купить">
-				<div class="tabs">
+				<div class="tabs searchform-tabs">
 					<div class="tab tab-active">Купить</div>
 					<div class="tab">Снять</div>
 					<div class="tab">Аукцион</div>
@@ -138,31 +138,64 @@
 			<div class="col-sm-8 col-lg-4">
 				<div class="propertys-item propertys-item-longbg" style="background-image: url('../img/propertys/1.png')">
 					<div class="propertys-item__title index-toggler">Коммерческая недвижимость</div>
-					<ul class="propertys-item__list index-toggle">
-						<li class="propertys-item__link"><a href="">Cвободного назначения <span>20</span></a></li>
-						<li class="propertys-item__link"><a href="">Торговая площадь <span>45</span></a></li>
-						<li class="propertys-item__link"><a href="">Склад <span>8</span></a></li>
-						<li class="propertys-item__link"><a href="">Имущественный комплекс <span>35</span></a></li>
-						<li class="propertys-item__link"><a href="">Здание <span>12</span></a></li>
-					</ul>
+					<div class="index-toggle">
+						<div class="propertys-tabs">
+							<div class="propertys-tab tab tab-active" data-tab="prodaja">Продажа</div>
+							<div class="propertys-tab tab" data-tab="arenda">Аренда</div>
+						</div>
+						<ul class="propertys-item__list prodaja tab-content tab-content-active">
+							<li class="propertys-item__link"><a href="">Продажа <span>20</span></a></li>
+							<li class="propertys-item__link"><a href="">Торговая площадь <span>45</span></a></li>
+							<li class="propertys-item__link"><a href="">Склад <span>8</span></a></li>
+							<li class="propertys-item__link"><a href="">Имущественный комплекс <span>35</span></a></li>
+							<li class="propertys-item__link"><a href="">Здание <span>12</span></a></li>
+						</ul>
+						<ul class="propertys-item__list arenda tab-content">
+							<li class="propertys-item__link"><a href="">Аренда <span>20</span></a></li>
+							<li class="propertys-item__link"><a href="">Торговая площадь <span>45</span></a></li>
+							<li class="propertys-item__link"><a href="">Склад <span>8</span></a></li>
+							<li class="propertys-item__link"><a href="">Имущественный комплекс <span>35</span></a></li>
+							<li class="propertys-item__link"><a href="">Здание <span>12</span></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-8 col-lg-4">
 				<div class="propertys-item" style="background-image: url('../img/propertys/2.png')">
 					<div class="propertys-item__title index-toggler">Жилая недвижимость</div>
-					<ul class="propertys-item__list index-toggle">
-						<li class="propertys-item__link"><a href="">Квартиры <span>35</span></a></li>
-						<li class="propertys-item__link"><a href="">Дома <span>14</span></a></li>
-					</ul>
+					<div class="index-toggle">
+						<div class="propertys-tabs">
+							<div class="propertys-tab tab tab-active" data-tab="prodaja">Продажа</div>
+							<div class="propertys-tab tab" data-tab="arenda">Аренда</div>
+						</div>
+						<ul class="propertys-item__list prodaja tab-content tab-content-active">
+							<li class="propertys-item__link"><a href="">Продажа Квартиры <span>35</span></a></li>
+							<li class="propertys-item__link"><a href="">Дома <span>14</span></a></li>
+						</ul>
+						<ul class="propertys-item__list arenda tab-content">
+							<li class="propertys-item__link"><a href="">Аренда Квартиры <span>35</span></a></li>
+							<li class="propertys-item__link"><a href="">Дома <span>14</span></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-8 col-lg-4">
 				<div class="propertys-item" style="background-image: url('../img/propertys/3.png')">
 					<div class="propertys-item__title index-toggler">Земельные участки</div>
-					<ul class="propertys-item__list index-toggle">
-						<li class="propertys-item__link"><a href="">Земельные участки <span>64</span></a></li>
-						<li class="propertys-item__link"><a href="">Объекты рекреации <span>32</span></a></li>
-					</ul>
+					<div class="index-toggle">
+						<div class="propertys-tabs">
+							<div class="propertys-tab tab tab-active" data-tab="prodaja">Продажа</div>
+							<div class="propertys-tab tab" data-tab="arenda">Аренда</div>
+						</div>
+						<ul class="propertys-item__list prodaja tab-content tab-content-active">
+							<li class="propertys-item__link"><a href="">Продажа Земельные участки <span>64</span></a></li>
+							<li class="propertys-item__link"><a href="">Объекты рекреации <span>32</span></a></li>
+						</ul>
+						<ul class="propertys-item__list arenda tab-content">
+							<li class="propertys-item__link"><a href="">Аренда Земельные участки <span>64</span></a></li>
+							<li class="propertys-item__link"><a href="">Объекты рекреации <span>32</span></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

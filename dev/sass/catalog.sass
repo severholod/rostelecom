@@ -28,6 +28,9 @@
 		width: 70px
 		a
 			width: 50%
+			&:hover
+				&>div:not(.catalog-view-active) span
+					background: #7B929B
 		&-grid
 			display: flex
 			flex-wrap: wrap
@@ -49,6 +52,9 @@
 				width: 19px
 				height: 4px
 				background: #CDCDCD
+			&:hover
+				.catalog-view-grid:not(.catalog-view-active) span
+					background: #7B929B
 		&-active
 			span
 				background: #FF4F12

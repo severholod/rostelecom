@@ -108,11 +108,12 @@ $(document).ready(function(){
 			if($(this).hasClass('tab-disable')) {
 				return false;
 			}
-			$('.tab').removeClass('tab-active');
+			$(this).siblings('.tab').removeClass('tab-active');
 			$(this).addClass('tab-active');
-			$('.tab-content').removeClass('tab-content-active');
-			$('.tab-content.' + dataTab).addClass('tab-content-active');
+			$(this).parents().nextAll('.tab-content').removeClass('tab-content-active');
+			$(this).parents().nextAll('.tab-content.' + dataTab).addClass('tab-content-active');
 		});
+
 	/*------------------------------------------------*/
 	/*-------------------Фото-табы--------------------*/
 		$('.card-photos__small-item img').on('click', function() {
