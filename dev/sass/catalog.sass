@@ -63,6 +63,7 @@
 		border: 1px solid #DDDDDD
 		height: 100%
 		&__photo
+			position: relative
 			img
 				width: 100%
 		&__text
@@ -152,4 +153,54 @@
 				margin-bottom: 25px
 			&__address
 				padding-bottom: 10px
-
+.auctions-catalog
+	.catalog-item__price
+		margin-bottom: 15px
+	.catalog-item__date
+		font-size: 15px
+		span
+			color: #7B929B
+.auction-item-close
+	.catalog-item__photo
+		img
+			filter: grayscale(100%)
+.auction-open
+	position: absolute
+	top: 15px
+	left: 15px
+	width: 193px
+	font-weight: normal
+	font-size: 17px
+	color: #FFF
+	padding: 3px 9px
+	background: #FF4F12
+	border-radius: 0px 5px 0px 0px
+	&::after
+		content: ''
+		display: block
+		width: 14px
+		height: 8px
+		background: url('../img/icons/call-right-title.png') center no-repeat
+		position: absolute
+		right: 0
+		bottom: -8px
+.auction-close
+	position: absolute
+	top: 15px
+	left: 15px
+	width: 173px
+	font-weight: normal
+	font-size: 17px
+	color: #FFF
+	padding: 3px 9px
+	background: #313948
+	border-radius: 0px 5px 0px 0px
+	&::after
+		content: ''
+		display: block
+		width: 14px
+		height: 8px
+		background: url('../img/icons/auction-close.png') center no-repeat
+		position: absolute
+		right: 0
+		bottom: -8px

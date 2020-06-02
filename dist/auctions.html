@@ -25,7 +25,7 @@
 			<ul class="mobile-menu-nav__list">
 				<li class="mobile-menu-nav__item"><a href="/catalog-grid.html">Продажа</a></li>
 				<li class="mobile-menu-nav__item"><a href="#">Аренда</a></li>
-				<li class="mobile-menu-nav__item"><a href="/auctions-grid.html">Аукционы</a></li>
+				<li class="mobile-menu-nav__item"><a href="/auctions.html">Аукционы</a></li>
 				<li class="mobile-menu-nav__item"><a href="/faq.html">Вопрос-ответ</a></li>
 				<li class="mobile-menu-nav__item"><a href="#">Контакты</a></li>
 			</ul>
@@ -40,7 +40,7 @@
 					<ul class="header-nav__list">
 						<li class="header-nav__item"><a href="/catalog-grid.html">Продажа</a></li>
 						<li class="header-nav__item"><a href="#">Аренда</a></li>
-						<li class="header-nav__item"><a href="/auctions-grid.html">Аукционы</a></li>
+						<li class="header-nav__item"><a href="/auctions.html">Аукционы</a></li>
 						<li class="header-nav__item"><a href="/faq.html">Вопрос-ответ</a></li>
 						<li class="header-nav__item"><a href="#">Контакты</a></li>
 					</ul>
@@ -75,20 +75,20 @@
 	</header>
 	<div class="padding"></div>
 	
-<section class="catalog-banner dark-bg">
+<section class="auctions-banner dark-bg">
 	<div class="container custom-container">
 		<ul class="breadcrumbs breadcrumbs-white">
 			<li class="breadcrumbs-item"><a href="/">Главная</a></li>
-			<li class="breadcrumbs-item">Продажа</li>
+			<li class="breadcrumbs-item">Аукцион</li>
 		</ul>
-		<div class="catalog-banner-title">Продажа жилой недвижимости</div>
+		<div class="auctions-banner-title">Аукцион недвижимости</div>
 		<form action="" class="searchform">
 			<div class="main-content row no-gutters">
 				<div class="col-sm-6 col-lg-3">
 					<div class="searchform-item">
 						<select name="" id="">
-							<option value="">Купить</option>
-							<option value="">Снять</option>
+							<option value="Москва">Москва</option>
+							<option value="Московская область">Московская область</option>
 						</select>
 					</div>
 				</div>
@@ -102,186 +102,20 @@
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="searchform-item">
-						<select name="" id="">
-							<option value="">Квартиру</option>
-							<option value="">Комнату</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-3">
-					<div class="searchform-item d-flex">
-						<input type="text" id="price-from" name="" placeholder="Цена от">
-						<input type="text" id="price-to" name="" placeholder="до">
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-3">
 					<div class="searchform-item d-flex">
 						<input type="text" id="" name="" placeholder="Площадь от">
 						<input type="text" id="" name="" placeholder="до">
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3">
-					<div class="searchform-item">
-						<select name="" id="">
-							<option value="Москва">Москва</option>
-							<option value="Московская область">Московская область</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="searchform-item searchform-item-long">
-						<input type="text" id="" name="" placeholder="Адрес, метро, район, ж/д, шоссе или ЖК">
+					<div class="searchform-item d-flex auctions-searchform-item">
+						<input type="text" id="price-from" name="" placeholder="Цена от">
+						<input type="text" id="price-to" name="" placeholder="до">
 						<button><span>Найти</span></button>
 					</div>
 				</div>
 			</div>
 		</form>
-	</div>
-</section>
-<section class="catalog">
-	<div class="container">
-		<div class="catalog-nav">
-			<div class="catalog-sort">
-				<span>Сортировка:</span>
-				<select name="" id="">
-					<option value="">По цене(сначала дешевле)</option>
-					<option value="">По цене(сначала дороже)</option>
-					<option value="">По дате</option>
-				</select>
-			</div>
-			<div class="catalog-view">
-				<a href="/catalog-grid.html"><div class="catalog-view-grid">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div></a>
-				<a href="/catalog-list.html"><div class="catalog-view-list catalog-view-active">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div></a>
-			</div>
-		</div>
-		<div class="row catalog-row">
-			<div class="col-12">
-				<a href="/catalog-item.html">
-					<div class="catalog-item catalog-item-list">
-						<div class="catalog-item__photo"><img src="/img/catalog-item-list.jpg" alt="Комплекс объектов недвижимого имущества"></div>
-						<div class="catalog-item__text">
-							<div class="catalog-item__title">Комплекс объектов недвижимого имущества г. Москва, ул. Профсоюзная"</div>
-							<div class="catalog-item__address">
-								<p>Адрес: <span>ул. Профсоюзная, д. 153</span></p>
-								<p>Общая площадь: <span>40,4 м²</span></p>
-							</div>
-							<div class="d-flex align-items-center justify-content-between border-top">
-								<div class="catalog-item__price">4 980 000 ₽</div>
-								<div class="catalog-item__date">20 апреля 2020 г.</div>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-12">
-				<a href="/catalog-item.html">
-					<div class="catalog-item catalog-item-list">
-						<div class="catalog-item__photo"><img src="/img/catalog-item-list.jpg" alt="Комплекс объектов недвижимого имущества"></div>
-						<div class="catalog-item__text">
-							<div class="catalog-item__title">Комплекс объектов недвижимого имущества г. Москва, ул. Профсоюзная"</div>
-							<div class="catalog-item__address">
-								<p>Адрес: <span>ул. Профсоюзная, д. 153</span></p>
-								<p>Общая площадь: <span>40,4 м²</span></p>
-							</div>
-							<div class="d-flex align-items-center justify-content-between border-top">
-								<div class="catalog-item__price">4 980 000 ₽</div>
-								<div class="catalog-item__date">20 апреля 2020 г.</div>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-12">
-				<a href="/catalog-item.html">
-					<div class="catalog-item catalog-item-list">
-						<div class="catalog-item__photo"><img src="/img/catalog-item-list.jpg" alt="Комплекс объектов недвижимого имущества"></div>
-						<div class="catalog-item__text">
-							<div class="catalog-item__title">Комплекс объектов недвижимого имущества г. Москва, ул. Профсоюзная"</div>
-							<div class="catalog-item__address">
-								<p>Адрес: <span>ул. Профсоюзная, д. 153</span></p>
-								<p>Общая площадь: <span>40,4 м²</span></p>
-							</div>
-							<div class="d-flex align-items-center justify-content-between border-top">
-								<div class="catalog-item__price">4 980 000 ₽</div>
-								<div class="catalog-item__date">20 апреля 2020 г.</div>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-12">
-				<a href="/catalog-item.html">
-					<div class="catalog-item catalog-item-list">
-						<div class="catalog-item__photo"><img src="/img/catalog-item-list.jpg" alt="Комплекс объектов недвижимого имущества"></div>
-						<div class="catalog-item__text">
-							<div class="catalog-item__title">Комплекс объектов недвижимого имущества г. Москва, ул. Профсоюзная"</div>
-							<div class="catalog-item__address">
-								<p>Адрес: <span>ул. Профсоюзная, д. 153</span></p>
-								<p>Общая площадь: <span>40,4 м²</span></p>
-							</div>
-							<div class="d-flex align-items-center justify-content-between border-top">
-								<div class="catalog-item__price">4 980 000 ₽</div>
-								<div class="catalog-item__date">20 апреля 2020 г.</div>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="row no-gutters justify-content-between">
-			<div class="catalog-pagination">
-				<div class="catalog-pagination__item"><a href="" class="pg-prev"></a></div>
-				<div class="catalog-pagination__item catalog-pagination__item-active"><a href="">1</a></div>
-				<div class="catalog-pagination__item"><a href="">2</a></div>
-				<div class="catalog-pagination__item"><a href="">3</a></div>
-				<div class="catalog-pagination__item"><a href="">4</a></div>
-				<div class="catalog-pagination__item"><a href="">5</a></div>
-				<div class="catalog-pagination__item"><a href="" class="pg-next"></a></div>
-			</div>
-			<div class="catalog-button">
-				<a href="#" class="btn btn-orange">Показать еще</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="call">
-	<div class="container">
-		<div class="row justify-content-between align-items-center">
-			<div class="col-lg-6">
-				<div class="call-overtitle">Обратная связь</div>
-				<div class="call-title">Свяжитесь с нами</div>
-				<div class="call-form">
-					<form action="">
-						<label for="call-to-action" class="label">Ваш телефон</label>
-						<div class="d-flex">
-							<input type="tel" class="input" id="call-to-action" name="call-to-action" placeholder="+7 (___) ___-__-__">
-							<button class="btn btn-orange">Отправить</button>
-						</div>
-						<div class="call-form__small">Отправив заявку, вы принимаете <a href="#politic" class="message">политику конфиденциальности</a></div>
-					</form>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="call-right">
-					<div class="call-right__top">
-						<div class="call-right__title">Call-центр</div>
-					</div>
-					<div class="call-right__bottom">
-						<a href="tel:88002220000">8 800 222 00 00</a>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </section>
 	<footer class="footer">

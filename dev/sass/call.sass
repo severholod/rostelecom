@@ -31,6 +31,21 @@
 						color: #333333
 						&:hover
 							text-decoration: underline
+	&-auctions
+		padding-top: 55px
+		padding-bottom: 53px
+		background: url('../img/call-auctions.jpg') no-repeat
+		background-position: center
+		background-size: cover
+		.call
+			&-form
+				&__small
+					margin-top: 0
+		.form-item
+			button.btn
+				padding-left: 15px
+				padding-right: 15px
+				width: 100%
 	&-overtitle
 		font-weight: normal
 		font-size: 17px
@@ -107,5 +122,29 @@
 				color: #FFF
 				&:hover
 					text-decoration: underline
-
+	&-consultations
+		margin-bottom: 55px
+	&-consultation
+		display: flex
+		align-items: center
+		&__icon
+			flex-shrink: 0
+			margin-right: 12px
+		&__title
+			font-size: 17px
+			color: #333
+@media(max-width: 992px) and (min-width: 576px)
+	.call-auctions
+		position: relative
+		z-index: 1
+		&::after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background: rgba(255,255,255,.4)
+			z-index: -1
 
