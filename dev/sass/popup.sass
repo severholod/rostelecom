@@ -33,6 +33,26 @@
 		font-size: 16px
 		color: #7B929B
 		margin-bottom: 28px
+	.searchform-item
+		border-left: none
+		input
+			border: 1px solid #BABDBA
+			border-right: none
+			border-radius: 7px 0 0 7px
+		button
+			border-radius: 0 7px 7px 0
+	&-citys
+		margin: 25px -15px 0
+		padding: 0
+		li
+			list-style-type: none
+			padding-top: 5px
+			padding-bottom: 5px
+			a
+				font-size: 15px
+				color: #333
+				&:hover
+					color: #FF4F12
 .fancybox-close
 	width: 18px
 	height: 18px
@@ -57,3 +77,17 @@
 		position: absolute
 		top: calc(50% - 1px)
 		transform: rotate(-45deg)
+.citys
+	display: none
+	&-back
+		margin: 20px 0
+		font-size: 15px
+		color: #FF4F12
+		cursor: pointer
+		&::before
+			content: ''
+			display: inline-block
+			width: 7px
+			height: 12px
+			margin-right: 20px
+			background: url('../img/icons/pg-prev.png') center no-repeat

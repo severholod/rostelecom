@@ -27,6 +27,16 @@ $(document).ready(function(){
 			}
 		}
 	});
+	$('.city-link').fancybox({
+		maxWidth: 1200,
+		padding: 0,
+		helpers: {
+			overlay: {
+				closeClick: true,
+				locked: false
+			}
+		}
+	});
 	/*--------------------------------------------*/
 	/*----------------Мобильное меню-------------*/
 	$('.mobile-toggler').click(function(){
@@ -88,8 +98,33 @@ $(document).ready(function(){
 		scrollHead();
 	});
 	/*-----------------------------------------------*/
-
-	/*-------------------- Тогглы --------------------*/
+	/*------------ Тимслайдер в контактах------------*/
+	mobileSlider();
+	$(window).resize(function() {
+		mobileSlider();
+	});
+	function mobileSlider () {
+		if (window.innerWidth < 576) {
+			$('.mobile-slider').addClass('owl-carousel');
+			$('.mobile-slider').owlCarousel({
+				items: 1,
+				dots: false,
+				nav: false,
+				loop: true
+			});
+		} else {
+			$('.mobile-slider').removeClass('owl-carousel');
+			$('.mobile-slider').trigger('destroy.owl.carousel');
+		}
+	}
+	$('#team-prev').click(function () {
+		$('.mobile-slider').trigger('prev.owl.carousel');
+	});
+	$('#team-next').click(function () {
+		$('.mobile-slider').trigger('next.owl.carousel');
+	});
+	/*-----------------------------------------------*/
+	/*-------------------- Тогглы -------------------*/
 	$('.index-toggler').on('click', function(e) {
 			e.preventDefault();
 			if(window.innerWidth < 576) {
@@ -100,6 +135,22 @@ $(document).ready(function(){
 	$('.toggler').on('click', function(e) {
 			$(this).toggleClass('open');
 			$(this).next('.toggle').toggle(400);
+	});
+	$('.contacts-sidebar__region.contacts-toggler').on('click', function(e) {
+			if(window.innerWidth < 576) {
+				if($(this).hasClass('open')) {
+					$('.contacts-sidebar__region').show();
+					$(this).removeClass('open');
+					$(this).next('.toggle').toggle(400);
+				} else {
+					$('.contacts-sidebar__region').hide();
+					$(this).show().addClass('open');
+					$(this).next('.toggle').toggle(400);
+				}
+			} else {
+				$(this).toggleClass('open');
+				$(this).next('.toggle').toggle(400);
+			}
 	});
 	/*------------------------------------------------*/
 		/*--------------------Табы-----------------------*/
@@ -121,5 +172,19 @@ $(document).ready(function(){
 			$('.card-photos__big img').removeClass('card-photos__big-active')
 			$('#' + id).addClass('card-photos__big-active')
 		})
+	/*------------------------------------------------*/
+	/*------------------Выбор города------------------*/
+	$('.regions a').on('click', function () {
+		$('.regions').hide();
+		$('.citys').show();
+	})
+	$('.citys-back').on('click', function () {
+		$('.citys').hide();
+		$('.regions').show();
+	})
+	$('.mobile-menu .header-city a').on('click', function(e) {
+		e.preventDefault();
+		$('.mobile-citys__wrap').toggle()
+	})
 	/*------------------------------------------------*/
 });
