@@ -1,0 +1,140 @@
+.catalog-map
+	display: flex
+	height: calc(100vh - 108px)
+	position: relative
+	&-left
+		position: relative
+		width: calc(100% - 667px)
+	&-searchform
+		position: absolute
+		top: 30px
+		width: 100%
+		max-width: 1160px
+		padding: 0 30px
+		left: 50%
+		transform: translateX(-50%)
+		&-btn
+			position: absolute
+			top: 20px
+			left: 20px
+			width: 115px
+			background: #FFF
+			border: 1px solid #DDD
+			border-radius: 3px
+			font-size: 14px
+			color: #333
+			padding: 8px 13px 8px 42px
+			cursor: pointer
+			&::before
+				content: ''
+				display: block
+				width: 24px
+				height: 18px
+				background: url('../img/icons/edit.png') center no-repeat
+				position: absolute
+				top: calc(50% - 9px)
+				left: 8px
+	&-wrap
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+	&-right
+		width: 667px
+		background: #f7f7f7
+		overflow-y: scroll
+	&-listitem
+		padding: 30px 30px 0
+	&-card
+		&__head
+			display: flex
+			justify-content: flex-end
+			padding: 24px 33px
+			.btn
+				padding-left: 21px
+				padding-right: 41px
+				position: relative
+				&::after
+					content: ''
+					display: block
+					width: 9px
+					height: 15px
+					background: url('../img/icons/back.png') center no-repeat
+					position: absolute
+					top: calc(50% - 7.5px)
+					right: 17px
+		&__content
+			padding: 33px
+			border-top: 1px solid #E1E1E1
+			.catalog-item__title
+				margin-top: 25px
+		&__button
+			margin-top: 26px
+			.btn
+				display: block
+	&-mobilebtn
+		.btn
+			display: block
+@media(min-width: 1200px)
+	.bb-n
+		border-bottom: none
+	.bl-n
+		border-left: none
+@media(max-width: 1500px)
+	.catalog-map
+		&-left
+			width: calc(100% - 560px)
+		&-right
+			width: 560px
+		&-listitem
+			padding: 30px 15px 0
+		.catalog-item__title
+			font-size: 15px
+@media(max-width: 1199px)
+	.catalog-map
+		&-left
+			width: calc(100% - 330px)
+		&-right
+			width: 330px
+@media(min-width: 768px)
+	.desktop-hidden
+		display: none
+@media(max-width: 767px)
+	.catalog-map
+		height: auto
+		flex-wrap: wrap
+		&-left
+			width: 100%
+		&-right
+			width: 100%
+		&-wrap
+			min-height: 400px
+		&-searchform
+			padding: 20px 20px 35px
+			background: #f7f7f7
+			z-index: 10
+			transform: translateY(-700px)
+			transition: transform .5s ease-out
+			top: 0
+			left: 0
+			&__head
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 19px
+				&-title
+					font-size: 22px
+					font-weight: 500
+					color: #333
+		// &-card
+		// 	&__head
+		// 		padding: 0
+		// 		.btn
+		// 			position: absolute
+		// 			top: 18px
+		// 			right: 20px
+		.searchform-down
+			transform: translateY(0px)
+			transition: transform .5s ease
+	.hidden-mobile
+		display: none

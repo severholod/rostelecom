@@ -39,16 +39,25 @@ $(document).ready(function(){
 	});
 	/*--------------------------------------------*/
 	/*----------------Мобильное меню-------------*/
-	$('.mobile-toggler').click(function(){
+	$('.header .mobile-toggler').click(function(){
 		$('.overlay').toggleClass('overlay-active');
 		$(".mobile-menu").toggleClass('mobile-menu-active');
-		$('.mobile-toggler').toggleClass('mobile-close');
+		$('.header .mobile-toggler').toggleClass('mobile-close');
 	});
 	$('.overlay').click(function(){
 		$('.overlay').removeClass('overlay-active');
 		$(".mobile-menu").removeClass('mobile-menu-active');
-		$('.mobile-toggler').removeClass('mobile-close');
+		$('.header .mobile-toggler').removeClass('mobile-close');
 	});
+	$('.catalog-map-searchform-btn').click(function () {
+		$('.catalog-map-searchform').addClass('searchform-down')
+	})
+	$('.catalog-map-searchform .mobile-toggler').click(function () {
+		$('.catalog-map-searchform').removeClass('searchform-down')
+	})
+	$('.catalog-map .searchform button').click(function (e) {
+		$('.catalog-map-searchform').removeClass('searchform-down')
+	})
 	/*------------------------------------------------*/
 	/*----------------Слайдер на главной-------------*/
 	var owl = $('.team-slider')
@@ -187,4 +196,9 @@ $(document).ready(function(){
 		$('.mobile-citys__wrap').toggle()
 	})
 	/*------------------------------------------------*/
+	$('.catalog-map-mobilebtn .btn').click(function(e) {
+		e.preventDefault()
+		$('.catalog-map-listitem .hidden-mobile').removeClass('hidden-mobile')
+		$(this).addClass('d-none')
+	})
 });
