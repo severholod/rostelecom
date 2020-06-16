@@ -8,6 +8,29 @@
 		justify-content: space-between
 		align-items: center
 		margin-bottom: 30px
+		&__map
+			display: block
+			background: #FFF
+			border: 1px solid #DDD
+			border-radius: 3px
+			font-size: 14px
+			line-height: 18px
+			color: #333
+			padding: 6px 6px 6px 32px
+			margin-right: 15px
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 18px
+				height: 15px
+				background: url('../img/icons/map-icon.png') center no-repeat
+				position: absolute
+				top: calc(50% - 7.5px)
+				left: 8px
+			&:hover
+				color: #333
+				text-decoration: underline
 	&-sort
 		padding: 5px 8px
 		background: #FFF
@@ -19,6 +42,7 @@
 		select
 			border: none
 			font-size: 14px
+			cursor: pointer
 	&-view
 		display: flex
 		background: #FFF
